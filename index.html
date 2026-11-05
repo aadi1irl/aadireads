@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MangaVerse | Discover Your Next Story</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Manga<span>Verse.</span></a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#catalogue">Explore</a>
+            <a href="https://anilist.co/" target="_blank">AniList</a>
+        </nav>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            AniList Connected
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label">YOUR NEXT ADVENTURE STARTS HERE</span>
+
+                <h1>
+                    Discover Your<br>
+                    Next <span>Story.</span>
+                </h1>
+
+                <p>
+                    Explore thousands of manga and manhwa
+                    from one beautiful place.
+                </p>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search manga or manhwa..."
+                    >
+
+                    <button id="searchButton">
+                        Search
+                    </button>
+                </div>
+
+                <div class="popular-searches">
+                    <span>Popular:</span>
+                    <button data-search="Solo Leveling">Solo Leveling</button>
+                    <button data-search="Berserk">Berserk</button>
+                    <button data-search="One Piece">One Piece</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue" id="catalogue">
+
+            <div class="section-header">
+                <div>
+                    <span class="section-label">THE COLLECTION</span>
+                    <h2>Explore Manga</h2>
+                </div>
+
+                <span id="status">Loading catalogue...</span>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-sort="POPULARITY_DESC">
+                    Popular
+                </button>
+
+                <button class="filter-btn" data-sort="SCORE_DESC">
+                    Top Rated
+                </button>
+
+                <button class="filter-btn" data-sort="TRENDING_DESC">
+                    Trending
+                </button>
+
+                <button class="filter-btn" data-sort="FAVOURITES_DESC">
+                    Most Favourited
+                </button>
+            </div>
+
+            <div class="manga-grid" id="mangaGrid"></div>
+
+            <button id="loadMoreButton" class="load-more">
+                Load More
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">Manga<span>Verse.</span></div>
+
+        <p>
+            MangaVerse is an independent manga discovery project.
+            Catalogue data provided by AniList.
+        </p>
+
+        <a href="https://anilist.co/" target="_blank">
+            Visit AniList ↗
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
