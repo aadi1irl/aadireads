@@ -1,4 +1,4 @@
-# 🌌 MangaVerse
+# 🌌 MangaVerse - Aadi1IRL
 
 ### Discover your next favourite story.
 
